@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color:  white;
+}
+
+.bayan {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    font-size: xx-large;
+    font-weight:bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor:pointer;
+}
+
+.bayan-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .bayan-header:hover {
+    background-color: hwb(323 94% 1%);
+  }
+
+  img {
+    max-width: 500px;
+    /*margin-right: 20px;*/
+    margin-left:calc(50% - 250px)
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  .bayan-toggle {
+    display: none;
+  }
+
+  .bayan-toggle:checked + .bayan-content {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .bayan-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+
+  }
+
+  .bayan-content p {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+
+.bayan-content:hover {
+    filter:brightness(80%);
+}
+
+
+.bayan-content:active {
+    filter:brightness(60%);
+}
+
+.icon {
+    font-size:2rem;
+    padding: 0 10px;
+    transition: transform 0.3s ease-out;
+    float: right;
+}
+
