@@ -29,7 +29,7 @@ body {
   }
 
   .bayan-header:hover {
-    background-color: hwb(323 94% 1%);
+    background-color: hwb(246 96% 0%);
   }
 
   img {
@@ -80,3 +80,27 @@ body {
     float: right;
 }
 
+/*Responsive design*/
+
+@media screen and (max-width: 320px) {
+    h1, span {
+    font-size: small;
+    }
+
+    img {
+        max-width: 280px;
+        margin-left:calc(50% - 140px)
+    }
+}
+
+@media screen and (max-width: 820px) {
+    h1, span {
+        font-size:medium;
+        }
+
+     img {
+            max-width: 500px;
+            margin-left:calc(50% - 250px)
+        }
+
+}
